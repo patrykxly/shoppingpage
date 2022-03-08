@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Kontakt</title>
+    </head>
+    <body>
+        <header>
+            <div class = "navbar">
+            <a href = "./index.html"><img src = "./images/logo.png" alt="Zdjecie zebatki logo" id="logo"></a> 
+            <nav>
+                <ul class = "menu">
+                    <div id = "brs"><br><br><br></div>
+                    <li><a href="./index.html" class = "menuItem">Sklep</a></li>
+                    <li><a href="./kontakt.html" class = "menuItem">Kontakt</a></li>
+                    <li><a href="./login.html" class = "menuItem" id = 'logvisibility'>Zaloguj się</a></li>
+                </ul>
+                <button class = "hamburger">
+                    <i class="menuIcon material-icons">menu</i>
+                    <i class="closeIcon material-icons">close</i>
+                </button>
+            </nav>
+            <a href="./koszyk.html"><img src="./images/shoppingcart.png" alt="koszyk" id="card"></a>
+            <a href="./login.html" id = 'login'>Zaloguj się</a>
+            </div>
+        </header>
+        <main id = "kontaktMain">
+            <h1 class = "toMargin">Kontakt</h1>
+            <div id = "kontaktContainer">
+                <div class = "kontaktLabel">
+                    <img src="./images/tele.png" alt="telefon" width = "150px" height = "150px">
+                    <h3>Telefon</h3>
+                    <p>+48 123 456 789</p>
+                </div>
+                <div class = "kontaktLabel">
+                    <img src="./images/adres.png" alt="adres" width = "150px" height = "150px">
+                    <h3>Adres</h3>
+                    <p>ul. Czarnowiejska</p>
+                </div>
+                <div class = "kontaktLabel" id = "open">
+                    <img src="./images/open.png" alt="otwarte" width = "150px" height = "150px">
+                    <h3>Otwarte</h3>
+                    <p>24/7</p>
+                </div>
+            </div>
+            <div class = "socials">
+                <a href="http://facebook.com" class="fa fa-facebook fa-3x"></a>
+                <a href="http://instagram.com" class="fa fa-instagram fa-3x"></a>
+                <a href="#" class="fa fa-linkedin fa-3x"></a>
+                <a href="#" class="fa fa-github fa-3x"></a>
+            </div>
+            <iframe id = "maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.033226728832!2d19.918423315590214!3d50.06693937942439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165ba6e4f1b1f7%3A0x8c640afa3e1e1140!2sCzarnowiejska%2C%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1645695347538!5m2!1spl!2spl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    
+        </main>
+        <footer>
+            <p>Copyright © Patryk Sokoliński 2022</p>
+            <div id = "footerSocial">
+                <a href="#" class="fa fa-linkedin fa-lg"></a>
+                <a href="#" class="fa fa-github fa-lg"></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./navbar.js"></script>
+    </body>
+</html>

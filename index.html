@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+        <title>Produkty</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class = "navbar">
+            <a href = "./index.html"><img src = "./images/logo.png" alt="Zdjecie zebatki logo" id="logo"></a> 
+            <nav>
+                <ul class = "menu">
+                    <div id = "brs"><br><br><br></div>
+                    <li><a href="./index.html" class = "menuItem">Sklep</a></li>
+                    <li><a href="./kontakt.html" class = "menuItem">Kontakt</a></li>
+                    <li><a href="./login.html" class = "menuItem" id = 'logvisibility'>Zaloguj się</a></li>
+                </ul>
+                <button class = "hamburger">
+                    <i class="menuIcon material-icons">menu</i>
+                    <i class="closeIcon material-icons">close</i>
+                </button>
+            </nav>
+            <a href="./koszyk.html"><img src="./images/shoppingcart.png" alt="koszyk" id="card"></a>
+            <a href="./login.html" id = 'login'>Zaloguj się</a>
+            </div>
+            </header>
+        <main>
+        <h1 class ="pagetitle">Produkty</h1>
+            <div class = "images">
+                <div class = "inline-block" id = "opony">
+                    <a href='opona.html'><img src = "./images/opony.jpg" alt="Opony" height="250px" width="250px"></a>
+                    <ul id = "oponyul">
+                        <li class = "first" id = "oponyh2"><a href='./opona.html'><h2>Opony</h2></a></li>
+                        <li>Opony zimowe</li>
+                        <li>Opony letnie</li>
+                        <li>Opony wielosezonowe</li>
+                    </ul>
+                </div>
+                <div class = "inline-block">
+                    <a href='olej.html'><img src = "./images/olej.webp" alt="Olej" height="250px" width="250px"></a>
+                    <ul id = "olejul">
+                        <li class = "first"><h2 id = "olejh2"><a href='./olej.html'>Oleje i płyny</h2></a></li>
+                        <li>Oleje, smary</li>
+                        <li>Płyny</li>
+                        <li>Chemia</li>
+                    </ul>   
+                </div>
+                <div class = "inline-block">
+                    <a href='akcesoria.html'><img src = "./images/akcesoria.jpg" alt="Akcesoria" height="250px" width="250px"></a>
+                    <ul id = "akcesoriaul">
+                        <li class = "first"><h2 id = "akcesoriah2"><a href='./akcesoria.html'>Akcesoria</h2></a></li>
+                        <li>Akcesoria samochodowe</li>
+                        <li>Oświetlenie</li>
+                        <li>Elektronika</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright © Patryk Sokoliński 2022</p>
+            <div id = "footerSocial">
+                <a href="#" class="fa fa-linkedin fa-lg"></a>
+                <a href="#" class="fa fa-github fa-lg"></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./navbar.js"></script>
+    </body>
+</html>

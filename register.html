@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Login</title>
+    </head>
+    <body>
+        <header>
+            <div class = "navbar">
+            <a href = "./index.html"><img src = "./images/logo.png" alt="Zdjecie zebatki logo" id="logo"></a> 
+            <nav>
+                <ul class = "menu">
+                    <div id = "brs"><br><br><br></div>
+                    <li><a href="./index.html" class = "menuItem">Sklep</a></li>
+                    <li><a href="./kontakt.html" class = "menuItem">Kontakt</a></li>
+                    <li><a href="./login.html" class = "menuItem" id = 'logvisibility'>Zaloguj się</a></li>
+                </ul>
+                <button class = "hamburger">
+                    <i class="menuIcon material-icons">menu</i>
+                    <i class="closeIcon material-icons">close</i>
+                </button>
+            </nav>
+            <a href="./koszyk.html"><img src="./images/shoppingcart.png" alt="koszyk" id="card"></a>
+            <a href="./login.html" id = 'login'>Zaloguj się</a>
+            </div>
+        </header>
+        <main>
+            <div class = "formcontainer">
+                <form id = "logowanie">
+                    <h2>Zarejestruj się</h2>
+                    <p><input type = "text" placeholder= "Adres e-mail" class = "registerInput" id = "emailLabel"></p>
+                    <p><input type = "text" placeholder= "Login" class = "registerInput" id = "loginLabel"></p>
+                    <p><input type = "password" placeholder= "Hasło" class = "registerInput" id = "hasloLabel"></p>
+                    <p><input type = "password" placeholder= "Powtórz hasło" class = "registerInput" id = "hasloRepeatLabel"></p>
+                    <button type = "submit" id = "registerBtn">Utwórz konto</button>
+                </form> 
+            </div>
+        </main>
+        <footer>
+            <p>Copyright © Patryk Sokoliński 2022</p>
+            <div id = "footerSocial">
+                <a href="#" class="fa fa-linkedin fa-lg"></a>
+                <a href="#" class="fa fa-github fa-lg"></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./register.js"></script>
+        <script type="text/javascript" src="./navbar.js"></script>
+    </body>
+</html>
