@@ -84,7 +84,7 @@
         background: rgb(184, 18, 18);
         color: white;
         list-style: none;
-        opacity: 0.9;
+        opacity: 1;
       }
       
       .showMenu {
@@ -407,8 +407,8 @@
     .kontaktLabel p{
         margin-top:5%;
         font-size:1.2rem;
-        opacity:0.6;
-    }
+        color:rgb(136, 135, 135);
+}
 
     .toMargin{
         margin-top:-6%;
@@ -1036,13 +1036,13 @@
 
     #logpng{
         position:absolute;
-        width:3vw;
-        height:2em;
+        width:2.7vw;
+        height:2.2em;
     }
 
     #passpng{
-        height:2em;
-        width:2.5vw;
+        height:2.2em;
+        width:2.2vw;
     }
 
     #passpng{
