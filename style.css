@@ -1109,6 +1109,13 @@
     #buyBtn:hover{
         background-color:rgb(129, 1, 5);
     }
+	
+    .addedBoughtTxt{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }	
 
     /*  =================
         login page styles
