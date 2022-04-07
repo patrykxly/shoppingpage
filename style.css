@@ -226,11 +226,11 @@
         ====================  */   
 
     #store-products{
-        margin-bottom:40%;
+        margin: 0 0 10em .5em;
     }
 
     .store-product img{
-        width:48vw;
+        width:45vw;
         border-radius:6%;
         border-bottom: 3px #666 solid;
     }
@@ -292,7 +292,7 @@
         margin-left:1%;
     }
 
-    #regError{
+    .regError{
         color:red;
         font-family: 'Lato', sans-serif;
         font-size:1.063rem;
@@ -340,22 +340,24 @@
         
         
     #productsContainer{
-        margin-top: 3%;
+        display:flex;
+        flex-direction:column;
         overflow:hidden;
         border-width:0.13vw;
         border-style:ridge;
         border-radius: 1.3vw;
         box-shadow: 0px 1.63vw 2.6vw #1687d933;
+        margin-top:1em;
     }
 
     #removeAll{
         border:none;
         border-radius:5%;
         background-color: #f3f3f3;
-        margin: 1% 1% 0 0;
+        margin: 1em .5em 1em 0em;
         padding:2% 2%;
         background-color: rgb(163, 3, 3);
-        float:right;
+        align-self:flex-end;
         color:white; 
         cursor:pointer;
         text-decoration: none;
@@ -372,6 +374,65 @@
         margin-left:5%;
         margin-right:13%;
         font-size: 5vw;
+    }
+
+    #noProducts{
+        font-size:1.2em;
+        text-align:center;
+        margin-bottom:1em;
+    }
+
+    .addedContainer{
+        border: 2px rgb(216, 216, 216) solid;
+        display:flex;
+        flex-direction:row;
+        margin: 1em 3em;
+        background-color: rgb(227, 227, 227);
+    }
+
+    .addedProductText{
+        font-size: 1em;
+        font-weight:600;
+        width:80%;
+    }
+
+    .addedPrice{
+        color:rgb(184, 52, 52);
+        padding-top:.5em;
+        margin-bottom:-1.5em;
+    }
+
+    .addedBtn{
+        padding:.3em .5em;
+        margin-bottom:.5em;
+        align-self:flex-end;
+        margin-right:.5em;
+        cursor:pointer;
+        color:white;
+        background-color:#a80000dc;
+        opacity:0.8;
+    }
+
+    .addedImage{
+        width:8em;
+        height:5em;
+    }
+
+    #buyBtn{
+        display:none;
+        align-self:flex-end;
+        margin: 2em 2em;
+        padding:1em 2em;
+        background-color:rgb(162, 12, 17);
+        color:white;
+        font-weight:600;
+    }
+
+    .addedBoughtTxt{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
     }
 
     /*  ===================
@@ -950,19 +1011,24 @@
         ==================== */
 
     #productsContainer{
+        display:flex;
+        flex-direction: column;
         overflow:hidden;
-        border-width:0.13vw;
+        border-width:0.1em;
         border-style:ridge;
         border-radius: 1.3vw;
         box-shadow: 0px 1.63vw 2.6vw #1687d933;
+        margin-bottom:2em;
     }
 
     #removeAll{
         border:none;
+        align-self:end;
         background-color: #f3f3f3;
-        margin: 1% 1% 0 0;
-        float:right;
+        font-size:1.2em;
         color:red; 
+        padding:0 1em 2em 1em;
+        margin: 1.5em 1em -2em 0;
         cursor:pointer;
         text-decoration: underline;
     }
@@ -977,6 +1043,71 @@
         float: left;
         margin-left: 20%;
         font-size: 1.3vw;
+    }
+
+    #noProducts{
+        font-size:2em;
+        text-align:center;
+    }
+
+    .addedContainer{
+        border: 2px rgb(216, 216, 216) solid;
+        display:flex;
+        flex-direction:row;
+        margin: 1em 3em;
+        background-color: rgb(227, 227, 227);
+    }
+
+    .addedProductText{
+        font-size: 1.2em;
+        font-weight:600;
+        width:100%;
+    }
+
+    .addedPrice{
+        color:rgb(184, 52, 52);
+        padding-top:.5em;
+        margin-bottom:-1.5em;
+    }
+
+    .addedBtn{
+        padding:.3em 2em;
+        margin-bottom:.5em;
+        align-self:flex-end;
+        margin-right:1em;
+        cursor:pointer;
+        color:white;
+        background-color:#a80000dc;
+        opacity:0.8;
+    }
+
+    .addedBtn:hover{
+        opacity:1;
+    }
+
+    .addedImage{
+        width:13em;
+        height:8em;
+    }
+
+    #buyBtn{
+        display:none;
+        align-self:flex-end;
+        margin: 2em 2em;
+        padding:1.5em 4em;
+        background-color:rgb(162, 12, 17);
+        cursor:pointer;
+        color:white;
+        -webkit-transition: background-color .5s;
+        -moz-transition:    background-color .5s;
+        -ms-transition:     background-color .5s;
+        -o-transition:      background-color .5s;
+        transition:         background-color .5s;
+        font-weight:600;
+    }
+
+    #buyBtn:hover{
+        background-color:rgb(129, 1, 5);
     }
 
     /*  =================
@@ -1083,7 +1214,7 @@
         cursor: pointer; 
     }
 
-    #regError{
+    .regError{
         opacity:1;
         color:red;
         font-family: 'Lato', sans-serif;
