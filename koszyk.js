@@ -1,5 +1,5 @@
 var prodCard = document.getElementById("products");
-var gotObject = JSON.parse(localStorage.getItem('storage'));
+let gotObject;
 
 const removeAllBtn = document.getElementById("removeAll");
 removeAllBtn.addEventListener("click", (e) =>{
@@ -40,7 +40,7 @@ function addObject(obj){
 }
 
 for(let i = 1; i < JSON.parse(localStorage.getItem(0))+1; i++){
-    var gotObject = JSON.parse(localStorage.getItem(i));
+    gotObject = JSON.parse(localStorage.getItem(i));
     if(gotObject)
         addObject(gotObject);
 }
