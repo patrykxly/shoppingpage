@@ -445,6 +445,10 @@
         cursor:pointer;
     }
 
+    .minus{
+        padding:0 .3em;
+    }
+
     .addedImage{
         width:8em;
         height:5em;
@@ -1149,6 +1153,19 @@
         font-size:1.4em;
         padding:0 .2em;
         cursor:pointer;
+        -webkit-transition: background-color 1s;
+        -moz-transition:    background-color 1s;
+        -ms-transition:     background-color 1s;
+        -o-transition:      background-color 1s;
+        transition:         background-color 1s;
+    }
+
+    .addedAmountBtn:hover{
+        background-color:#d30000dc;
+    }
+
+    .minus{
+        padding:0 .3em;
     }
 
     #buyBtn{
