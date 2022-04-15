@@ -66,6 +66,7 @@ function addObject(obj){
     amountOfProduct.classList.add("addedAmount");
     plusBtn.classList.add("addedAmountBtn");
     minusBtn.classList.add("addedAmountBtn");
+    minusBtn.classList.add("minus");
     deleteBtn.addEventListener("click", (e) =>{
         e.preventDefault();
         localStorage.removeItem(obj.num);
