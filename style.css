@@ -418,13 +418,11 @@
 
     .addedBtn{
         padding:.3em .5em;
-        margin-bottom:.5em;
+        margin: 0 .5em .5em 1em;
         align-self:flex-end;
-        margin-right:.5em;
         cursor:pointer;
         color:white;
         background-color:#a80000dc;
-        opacity:0.8;
     }
 
     .addedAmount{
