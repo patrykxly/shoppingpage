@@ -1122,13 +1122,15 @@
     .addedProductText{
         font-size: 1.2em;
         font-weight:600;
-        width:100%;
+        width:60%;
+        margin-left:.5em;
     }
 
     .addedPrice{
         color:rgb(184, 52, 52);
         padding-top:.5em;
         margin-bottom:-1.5em;
+        margin-left:1em;
     }
 
     .addedBtn{
