@@ -40,3 +40,11 @@ menuItems.forEach(
     menuItem.addEventListener("click", toggleMenu);
   }
 )
+
+let counterItem = document.createElement("p");
+if(JSON.parse(localStorage.getItem(1)) != 0)
+  counterItem.innerHTML = JSON.parse(localStorage.getItem(1));
+else 
+  counterItem.innerHTML = 0;
+document.getElementsByClassName("navbar")[0].appendChild(counterItem);
+counterItem.className = "cardVal";
