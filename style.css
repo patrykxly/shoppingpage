@@ -115,7 +115,20 @@
         height: 3.4rem;
         width:3.5rem;
         margin-left:-100%;
-      }
+    }
+
+      .cardVal{
+        margin-right:18%;
+        margin-left:-50%;
+        align-self:flex-start;
+        justify-content: end;
+        padding:.2% .4%;
+        color:white;
+        font-weight:600;
+        border: rgb(169, 111, 3) solid 2px;
+        border-radius:50%;
+        background-color: rgb(149, 97, 0);
+    }
     
     /*  ==========================
         styles for item selection
@@ -384,9 +397,10 @@
 
     .addedContainer{
         border: 2px rgb(216, 216, 216) solid;
+        width:100%;
         display:flex;
         flex-direction:row;
-        margin: 1em 3em;
+        margin: 1em 0;
         background-color: rgb(227, 227, 227);
     }
 
@@ -411,6 +425,24 @@
         color:white;
         background-color:#a80000dc;
         opacity:0.8;
+    }
+
+    .addedAmount{
+        background-color: white;
+        align-self:flex-end;
+        margin-bottom:.8em;
+        font-size:1.4em;
+        padding:0 .4em;
+    }
+
+    .addedAmountBtn{
+        align-self:flex-end;
+        margin-bottom:.8em;
+        background-color: #a80000dc;
+        color:white;
+        font-size:1.4em;
+        padding:0 .2em;
+        cursor:pointer;
     }
 
     .addedImage{
@@ -748,6 +780,18 @@
         margin-right:2%;
     }
 
+    .cardVal{
+        float:right;
+        color:white;
+        font-weight:600;
+        margin-right:-16.5%;
+        margin-top:.3%;
+        padding: .4% .5%;
+        border: rgb(169, 111, 3) solid 2px;
+        border-radius:50%;
+        background-color: rgb(149, 97, 0);
+    }
+
     #login{
         float:right;
         text-decoration: none;
@@ -1072,9 +1116,8 @@
 
     .addedBtn{
         padding:.3em 2em;
-        margin-bottom:.5em;
+        margin: 0em 1em .5em 1.5em;
         align-self:flex-end;
-        margin-right:1em;
         cursor:pointer;
         color:white;
         background-color:#a80000dc;
@@ -1088,6 +1131,24 @@
     .addedImage{
         width:13em;
         height:8em;
+    }
+
+    .addedAmount{
+        background-color: white;
+        align-self:flex-end;
+        margin-bottom:.8em;
+        font-size:1.4em;
+        padding:0 .4em;
+    }
+
+    .addedAmountBtn{
+        align-self:flex-end;
+        margin-bottom:.8em;
+        background-color: #a80000dc;
+        color:white;
+        font-size:1.4em;
+        padding:0 .2em;
+        cursor:pointer;
     }
 
     #buyBtn{
@@ -1109,13 +1170,13 @@
     #buyBtn:hover{
         background-color:rgb(129, 1, 5);
     }
-	
+
     .addedBoughtTxt{
         position: absolute;
         top: 40%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
-    }	
+    }
 
     /*  =================
         login page styles
