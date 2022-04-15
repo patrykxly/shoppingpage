@@ -25,17 +25,12 @@
     }
 
     /*  ==================================
-        switching off desktop menu options 
+        switching off desktop login button 
         ==================================  */    
 
     #login{
         display:none;
     }
-
-    .searchBox{
-        display:none;
-    }
-
 
     /*  =================
         navigation styles 
@@ -224,7 +219,17 @@
         padding: 2% 2%;
         color:white;
     }
+	
+    .searchBox{
+        display:flex;
+        flex-direction:row;
+        justify-content: end;
+        margin-right:.5em;
+    }
 
+    #search{
+        padding: .5em .5em;
+    }
 
     .container{
         display:grid;
