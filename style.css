@@ -1263,6 +1263,8 @@
         flex-direction: row;
         align-items: center;
         margin-left:2vw;
+	-webkit-transition: opacity .5s;
+        transition: opacity .5s;  
     }
 
     #logowanie p:hover{
